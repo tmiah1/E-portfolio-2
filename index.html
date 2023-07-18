@@ -7,6 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Kr_81zp2OH0bmi1KC");
+   })();
+</script>
 </head>
 <body>
     <head>
@@ -109,7 +118,7 @@
                     <h4 class="modal__sub-title modal__title--contact">
                         I'm currently open to new opportunities.
                     </h4>
-                    <form id="contact__form" action="">
+                    <form id="contact__form" onsubmit="contact(event)">
                         <div class="form__item">
                             <label class="form__item--label">Name</label>
                             <input class="input" name="user__name" type="text" required></input>
@@ -129,6 +138,10 @@
                     <div class="modal__overlay modal__overlay--loading">
                         <i class="fas fa-spinner"></i>
                     </div>
+                    <div class="modal__overlay modal__overlay--success">
+                        Thanks for the Message! looking forward to speaking to you soon.
+                    </div>
+                    <i class="fas fa-times modal__exit click"></i>
                 </div>
             </div>
         </section>
