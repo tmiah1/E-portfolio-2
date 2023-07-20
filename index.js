@@ -12,5 +12,5 @@ function contact(event) {
         'Kr_81zp2OH0bmi1KC'
     ).then(() => {
         console.log('this worked1')
-    })
+    }, 500);
 }
