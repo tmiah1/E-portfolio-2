@@ -408,6 +408,10 @@ MODAL
     
 }
 
+.modal__overlay--visible {
+    z-index: 1;
+}
+
 .fa-spinner {
     animation: spinner 750ms infinite linear;
 
@@ -415,7 +419,7 @@ MODAL
 
 @keyframes spinner {
     0% {
-        transform: rotate: (0);
+        transform: rotate (0);
     }
 
     100% {
