@@ -3,26 +3,33 @@
 // Kr_81zp2OH0bmi1KC
 
 function contact(event) {
-    event.preventDefault();
-    const loading = document.querySelector('.modal__overlay--loading')
-    const success = document.querySelector('.modal__overlay--success')
-    loading.classList += " modal__overlay--visible";
-    email.js
+    event.preventdefault();
+    const loading = document.querySelector('.modal__overlay--loading');
+    const success = document.querySelector('.modal__overlay--success');
+    loading.classlist += ' modal__overlay--visible';
+    emailjs
     .sendform(
         'service_1l4euvi',
         'template_v00ff5p',
         event.target,
         'Kr_81zp2OH0bmi1KC'
     ).then(() => {
-        loading.classList.remove("modal__overlay--visible");
-        success.classList += " modal__overlay--visible";
-    }).catch(() => {
-        loading.classList.remove("modal__overlay--visible");
+        loading.classlist.remove("modal__overlay--visible");
+        success.classlist += " modal__overlay--visible";
+    }).catch (() => {
+        loading.classlist.remove("modal__overlay--visible");
         alert(
-            "the email service is temporarily unavailable. please contact me at email@email.com"
-        )
-    }; 
-     }) 
+            "the email service is temporarily unavailable. please contact me on ahmedtalha.miah@gmail.com"
+        );
+    })
 }
+
+let isModalOpen = false;    
+function togglemodal() {
+    isModalOpen = true;
+    document.body.classlist += " modal--open";
+}
+    
+
 
 
