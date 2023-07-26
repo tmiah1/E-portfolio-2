@@ -279,7 +279,7 @@ MODAL
 }
 
 .modal--open .modal {
-    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    box-shadow: 0 21px 80px 0 rgb(0, 0, 0, 0.55);
     z-index: 60;
     visibility: visible;
 }
