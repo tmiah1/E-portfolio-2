@@ -27,11 +27,9 @@ function contact(event) {
 let isModalOpen = false;    
 function togglemodal() {
     if (isModalOpen) {
-        isModalOpen = false;
-        return
-        document.body.classList.remove("modal--open");
+        return document.body.classList.remove("modal--open");
     }
-    isModalOpen = true;
+    isModalOpen = !isModalOpen;
     document.body.classlist += " modal--open";
 }
     
