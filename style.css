@@ -276,6 +276,8 @@ MODAL
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1c, box-shadow 0.5s ease;
 }
 
 .modal--open .modal {
@@ -291,11 +293,17 @@ MODAL
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modal--open .modal__about {
+    transform: translateX(0%);
 }
 
 .modal__about {
     background-color: rgb(245, 245, 245);
+    transform: translateX(-110%);
 }
 
 .modal__languages {
