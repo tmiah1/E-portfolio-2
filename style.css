@@ -288,7 +288,7 @@ MODAL
 
 .modal__half {
     height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 40px 72px;
     display: flex;
     flex-direction: column;
