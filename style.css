@@ -298,7 +298,7 @@ MODAL
 }
 
 .modal--open .modal__about {
-    transform: translateX(0%);
+    transform: translateX(50%);
 }
 
 .modal__about {
