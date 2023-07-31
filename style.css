@@ -293,12 +293,12 @@ MODAL
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    position: absolute;
     transition: all 300ms ease-in;
 }
 
 .modal--open .modal__about {
-    transform: translateX(50%);
+    transform: translateX(0%);
 }
 
 .modal__about {
