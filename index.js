@@ -6,7 +6,7 @@ function contact(event) {
     event.preventdefault();
     const loading = document.querySelector('.modal__overlay--loading');
     const success = document.querySelector('.modal__overlay--success');
-    loading.classlist += ' modal__overlay--visible';
+    loading.classList += ' modal__overLay--visible';
     emailjs
     .sendform(
         'service_1l4euvi',
@@ -14,10 +14,10 @@ function contact(event) {
         event.target,
         'Kr_81zp2OH0bmi1KC'
     ).then(() => {
-        loading.classlist.remove("modal__overlay--visible");
-        success.classlist += " modal__overlay--visible";
+        loading.classList.remove("modal__overLay--visible");
+        success.classList += " modal__overLay--visible";
     }).catch (() => {
-        loading.classlist.remove("modal__overlay--visible");
+        loading.classList.remove("modal__overLay--visible");
         alert(
             "the email service is temporarily unavailable. please contact me on ahmedtalha.miah@gmail.com"
         );
@@ -30,8 +30,9 @@ function toggleModal() {
         isModalOpen = false;
         return document.body.classList.remove("modal--open");
     }
+    //toggle mode
     isModalOpen = true;
-    document.body.classlist += " modal--open";
+    document.body.classList += " modal--open";
 }
     
 
