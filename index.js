@@ -2,6 +2,19 @@
 // service_1l4euvi
 // Kr_81zp2OH0bmi1KC
 
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
 function contact(event) {
     event.preventdefault();
     const loading = document.querySelector('.modal__overlay--loading');
@@ -14,7 +27,7 @@ function contact(event) {
         event.target,
         'Kr_81zp2OH0bmi1KC'
     ).then(() => {
-        loading.classList.remove("modal__overLay--visible");
+        loading.classList.remove(" modal__overLay--visible");
         success.classList += " modal__overLay--visible";
     }).catch (() => {
         loading.classList.remove("modal__overLay--visible");
